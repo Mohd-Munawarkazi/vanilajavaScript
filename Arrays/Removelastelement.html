@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove elemnet</title>
+    <link rel="stylesheet" href="./array.css">
+</head>
+<body>
+    <h1>
+        Remove last elemnet
+    </h1>
+    <script>
+                Coffee=["Espresso ","Macchiato","Americano","Café Latte","Flat White","Cappuccino"];
+
+                for(i=0; i<Coffee.length;i++){
+                    document.write(Coffee[i]+"<br>");
+                }
+
+                document.write("<br>")
+                document.write("<br>")
+                //i wanna remove Cappuccino
+
+                Coffee.pop();
+                console.log(Coffee);
+                for(i=0; i<Coffee.length;i++){
+                    document.write(Coffee[i]+"<br>");
+                }
+                document.write("<br>")
+                document.write("<br>")
+                document.write( "Change Aray element"+"<br>")
+
+                Coffee[1]="Tekiskyno cafe`";
+                console.log(Coffee);
+                for(i=0; i<Coffee.length;i++){
+                    document.write(Coffee[i]+"<br>");
+                }
+
+                //15=> find given value by index number of an Array;
+
+    </script>
+    
+</body>
+</html>
