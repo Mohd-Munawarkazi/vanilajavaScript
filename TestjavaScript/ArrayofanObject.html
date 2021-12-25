@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array of an object</title>
+</head>
+<body>
+    <h1>
+        array of an object
+    </h1>
+    <script>
+        let employee=[
+            {
+                name:"srk",
+                age:26,
+                salary:25000,
+                company:"tekisky"
+
+        },
+            {
+                name:"Aseem",
+                age:27,
+                salary:25000,
+                company:"tekisky"
+
+        },
+            {
+                name:"Altaf ",
+                age:26,
+                salary:20000,
+                company:"tekisky"
+
+        }
+    
+    ]
+    console.log(employee)
+    // for(x in employee){
+    //     console.log(employee[x])
+    // }
+    
+        for(i=0; i<employee.length; i++){
+            console.log(employee[i].name);
+            console.log(employee[i].age);
+            console.log(employee[i].salary);
+            console.log(employee[i].company);
+        }
+
+employee.forEach((currValue)=>{
+    console.log(currValue.name)
+    console.log(currValue.age)
+    console.log(currValue.salary)
+    console.log(currValue.company)
+
+})
+
+
+    for(x of employee){
+        console.log(x)
+    }
+////////////swap two  numbers/////////////
+    let a=10;
+    let b=20;
+    let temp;
+    temp=a;
+    a=b;
+    b=temp;
+    console.log(a)
+    console.log(b)
+///////////////Array destruturi  ng//////////////
+    let c=20;
+    let d=40;
+    [c,d]=[d,c]
+    console.log(c)
+    console.log(d)
+    </script>
+</body>
+</html>
