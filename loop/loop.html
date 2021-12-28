@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop </title>
+    <style>
+        .main{
+            background-color: rgb(196, 74, 74);
+            width: 100%;
+            height: 50%;
+            
+        }
+        .child{
+            width: 50%;
+            background-color: brown;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>for loop         </h1> -->
+
+    <div class="main">
+        <h1>main div</h1>
+        <div class="child">
+            <h1>child div</h1>
+        </div>
+        <div class="child">
+            <h1>child div</h1>
+        </div>
+        <div class="child">
+            <h1 style="background: crimson ;">child div</h1>
+        </div>
+
+    </div>
+    
+    <script>
+        let bike=["bike0","bike1","bike2","bike3"]
+        // console.log(bike[3])
+       var i=1;
+        for(i=0; i<bike.length;i++){
+            debugger
+            // console.log(bike[0])
+            if(bike[i]=="bike0"){
+                console.log(i)
+                console.log("bike0")
+
+
+            }else if(bike[i]=="bike1"){
+                console.log("bike1")
+
+
+            }else{
+                console.log("bike3")
+            }
+        }
+    </script>
+</body>
+</html>

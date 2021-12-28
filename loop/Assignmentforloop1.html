@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-loop day 1</title>
+</head>
+<body>
+    <h1>For Loop </h1>
+    <p id="demo">hello world</p>
+    <p id="demo1">hello world</p>
+    <p id="demo2">hello world</p>
+    <p id="demo3">hello world</p>
+    <p id="demo5">hello world</p>
+    <script>
+        var a=5
+        console.log(a)
+        for(i=0;i<a;i++){
+            console.log(i)
+            document.write(i)
+        }
+        //01234
+        document.write("<br>")
+        document.write("<br>"+"let ")
+        //using let 
+        let a1=50;
+        for(i=0;i<5;i++){
+            document.write(i)            //01234
+            document.getElementById("demo").innerHTML=i; //5
+        }
+        document.getElementById("demo").innerHTML=a1;  //5
+        document.getElementById("demo1").innerHTML=i;  //5
+
+
+
+        //3 loop will run
+
+        let text="";
+        let i3=0;
+        while(i3<10){
+            text+="<br> the number is "+i3;
+            i3++;
+        }
+        document.getElementById("demo3").innerHTML=text;
+
+
+      
+
+    </script>
+    
+</body>
+</html>
