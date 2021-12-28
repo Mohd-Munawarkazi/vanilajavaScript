@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            text-align: center;
+            background-color: rgb(219, 195, 236);
+            width: 30%;
+            margin: auto;
+            box-shadow: 5px 5px 5px 0.5px;
+            border: 1px solid black;
+            margin-top: 260px;
+            padding: 10px;
+        }
+        #btn{
+            width: 105px;
+            background-color: rgb(169, 81, 236);
+            text-align: center;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: #fff;
+            font-size: large;
+            font-weight: 800;
+            box-shadow: (0px 0px 0px 0px 0.5);
+
+        }
+    </style>
+    <title>Add Event listner</title>
+</head>
+<body>
+    <div>
+    <h1 id="hello">
+        Hello😇
+    </h1>
+    <h2>myhello</h2>
+    <button id="btn">click me</button>
+    </div>
+    <script>
+        x=document.getElementById('hello');
+        x.addEventListener('click',sayhello)
+        var x = document.getElementsByTagName("h1")[0].getAttribute("id");
+
+        console.log(x)
+
+      var x1=  document.getElementsByTagName("h2")[0].setAttribute("class", "democlass");
+      console.log(x1);
+
+
+        y=document.getElementById('btn').addEventListener('click',sayhello)
+
+        function sayhello(){
+            alert("hello ")
+        }
+    </script>
+</body>
+</html>
